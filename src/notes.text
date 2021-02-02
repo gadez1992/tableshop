@@ -1,0 +1,38 @@
+Products.jsx 
+each product 
+render each product, using the material UI grid
+
+Product.jsx 
+Each product 
+
+
+Navbar
+
+In App.jsx 
+import { Navbar, Products, Cart, Checkout } from './components';
+*we need to export on the index.js in components
+prodcuts is the state with our prodcuts
+we are using commerce to fecth our porducts and also to fecth our carts
+
+handleAddtoCart will help add the products to our carts
+passed it to prodcut component
+
+
+lib/commerce.js
+importing comerce to get our Products
+
+ENV folder has the commerce key 
+
+
+
+In Cart.jsx
+return empty cart message or render cart
+
+
+
+
+
+
+
+
+
