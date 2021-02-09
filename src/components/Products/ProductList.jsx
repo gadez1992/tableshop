@@ -1,16 +1,18 @@
-import React from 'react';
+// import React from 'react';
+import React, { useState } from 'react';
+
 import Grid from '@material-ui/core/Grid';
 
 import Product from './Product/Product';
 import useStyles from './styles';
+import Loading from "./Loading";
 
-const Products = ({ products, onAddToCart }) => {
+const ProductList = ({ products, onAddToCart, loading}) => {
   const classes = useStyles();
-
-  if (!products.length) return <p>Loading...</p>;
-
   return (
+    
     <main className={classes.content}>
+    {loading && <Loading />}
       <div className={classes.toolbar} />
       <Grid container justify="center" spacing={4}>
         {products.map((product) => (
@@ -23,5 +25,5 @@ const Products = ({ products, onAddToCart }) => {
   );
 };
 
-export default Products;
+export default ProductList;
 

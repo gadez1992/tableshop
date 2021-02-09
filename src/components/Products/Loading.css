@@ -1,0 +1,10 @@
+.loading-card{
+  margin-top: 2.8rem;
+  padding-top: 2rem;
+  height: 100vh;
+  background-color: transparent;
+  color: aliceblue;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+}
